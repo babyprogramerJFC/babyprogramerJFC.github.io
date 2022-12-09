@@ -13,7 +13,9 @@ fetch("https://random-words5.p.rapidapi.com/getMultipleRandom?count=1&minLength=
 .then(result=>result.json())
 .finally(()=>{
 let fondoCarga=document.querySelector('.cargando')
-fondoCarga.style.display='none';}
+let contenedorGeneral=document.querySelector('.contenedor__general')
+fondoCarga.style.display='none';
+contenedorGeneral.style.display='block';}
 )
 .then(data=>{
     //Convertir el texto en un array
